@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align text left, image right */
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif; /* Matching font */
+}
+
+.product-info {
+    flex: 1;
+    max-width: 50%;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa; /* Dotted border */
+    width: 100%;
+}
+
+
+/* Capsule Image Container */
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    width: 450px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 2s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 2s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 2s ease-in-out;
+    position: relative;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Initially show only the center portion of the image */
+.product-image {
+    width: 100%;
+    height: auto;
+    transform: scaleY(1.2) translateY(-25%);
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    border-radius: 50px;
+}
+
+/* Expanded state */
+.image-container.expanded {
+    height: 200px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-container.expanded .product-image {
+    transform: scaleY(1) translateY(0);
+}

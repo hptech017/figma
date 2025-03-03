@@ -1,0 +1,63 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Keeps items in a vertical stack */
+    gap: 10px;
+  }
+  
+  .sidebar-item {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px; /* Adjust for rounded corners */
+    cursor: pointer;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;/* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    /* transform: translateY(-50%); */
+    transform: translateX(1/2);
+    rotate: 270deg;
+  }
+  
+  .icon {
+    font-size: 22px;
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+  
+  .sidebar-item span {
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Expand box on hover */
+  .sidebar-item:hover {
+    width: 80px;
+    height: 100px;
+  }
+  
+  .sidebar-item:hover span {
+    opacity: 1;
+  }
+  
+  /* Custom Colors */
+  .skype { background-color: #00aff0; }
+  .linkedin { background-color: #0077b5; }
+  .mail { background-color: #d14836; }
+  .demos { background-color: #ff3d00; }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
