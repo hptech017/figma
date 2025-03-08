@@ -1,0 +1,49 @@
+/* Ensure Sidebar Items Don't Grow */
+.sidebar-item {
+  width: 50px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077b5;
+  padding: 10px 0;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 0;
+  transition: none; /* Ensure no growth */
+}
+
+/* Vertical Text (One Letter Per Line) */
+.sidebar-item .text {
+  font-family: Plus Jakarta Sans;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+/* Icon */
+.sidebar-item img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Increase Only Icon and Text */
+.sidebar-item:hover .text {
+  font-size: 16px; /* Slightly increase font size */
+  transform: rotate(180deg) scale(1.2);
+}
+
+.sidebar-item:hover img {
+  transform: scale(1.2); /* Enlarge icon */
+}
