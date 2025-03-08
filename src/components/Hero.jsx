@@ -3,9 +3,9 @@ import NexaChainAi from '../sub-components/NexaChainAi'
 
 const Hero = () => {
   return (
-    <div>
+    
       <NexaChainAi/>
-    </div>
+ 
   )
 }
 

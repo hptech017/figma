@@ -4,14 +4,14 @@
     left: 0;
     top: 62.7%;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 0; */
     z-index: 1000;
     border-bottom-right-radius: 45px;
     border-top-right-radius: 45px;
     overflow: hidden;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 /* Sidebar Items */
