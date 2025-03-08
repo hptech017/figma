@@ -2,7 +2,7 @@
 .sidebar {
     position: absolute;
     left: 0;
-    top: 62.7%;
+    top: 65.7%;
     transform: translateY(-50%);
     /* display: flex; */
     /* flex-direction: column; */
@@ -78,6 +78,15 @@
 .mask { background-color: #000000; }
 
 /* RESPONSIVENESS */
+
+
+
+ @media screen and (max-width: 1700px) and (min-width: 1600px){
+    .sidebar {
+        top: 51%;
+    }
+} 
+
 @media (max-width: 1024px) {
     .sidebar-item {
         width: 45px;
