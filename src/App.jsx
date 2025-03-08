@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
 import ProductSection from "./components/ProductSection";
 import SideBar1 from "./components/SideBar1";
+import Product from "./components/Product";
 
 // import "./styles/header.css";
 // import "./styles/sidebar.css";
@@ -12,18 +12,18 @@ import SideBar1 from "./components/SideBar1";
 
 function App() {
   return (
-    <div className="app">
+    <>
       <Header />
       <Hero />
-      {/* <Sidebar /> */}
       <SideBar1 />
+      <Product/>
       { /*
 
   
       <ProductSection />
       <ProductSection />
       <ProductSection /> */}
-    </div>
+    </>
    
   );
 }

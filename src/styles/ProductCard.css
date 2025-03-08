@@ -1,0 +1,116 @@
+/* Global Styles */
+.product-container {
+    position: relative; 
+    border-top: 2px solid rgba(130, 126, 126, 0.735);
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 20px; 
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #ff6600;
+}
+
+/* Find Section */
+.find-section {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.find-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.highlight-text {
+    color: blue;
+}
+
+.find-section p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 20px;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #e68900;
+}
+
+/* Product Text */
+.product-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    position: absolute;
+}
+
+.mlm-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+}
+
+.product-text h2 {
+    font-size: 59px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.products-content {
+    font-size: 15px;
+    position: relative;
+}
+
+/* Product Name Section */
+.productName {
+    display: flex;
+}
+
+/* Image Container */
+.image-container {
+    width: 40%;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 1s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.image-container.expanded {
+    height: 264px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    transition: transform 1s ease-in-out;
+}
+
+.image-container.expanded .product-image {
+    transform: scale(1.1);
+}

@@ -3,16 +3,13 @@ import "../styles/NexaChainAi.css";
 import nexa from "../assets/Nexa.png";
 import chain from "../assets/Chain.png";
 import ai from "../assets/AI.png";
+import nexaImg from '../assets/nexa-chain-ai-img.png'
 
 const NexaChainAi = () => {
   return (
     <section className="hero">
       <div className="nexa-chain-ai-container">
-        <img src={nexa} alt="Nexa" className="nexa-img" />
-              <div className="chain-ai">
-              <img src={chain} alt="Chain" className="chain-img" />
-              <img src={ai} alt="AI" className="ai-img" />
-       </div>
+       <img className='hero_img' src={nexaImg} alt="nexa-img" />
       </div>
 
       <p className="hero-text">

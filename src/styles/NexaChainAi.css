@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.hero{
+  margin-top: -20px;
+  background-color: transparent
+}
+
+.hero .nexa-chain-ai-container .hero_img{
+  width: 90%;
+  margin-left: 30px;
+}
+
 .hero {
   width: 100%;
   height: 100%;
@@ -21,9 +31,9 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 100vw;
-  border-top: 2px solid black;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  /* width: 100%; */
+  /* border-top: 2px solid black; */
+  /* flex-wrap: wrap; Allows wrapping on smaller screens */
 }
 
 .chain-ai {
@@ -58,7 +68,7 @@
 }
 
 /* Adjust layout for tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .hero {
     height: auto;
     padding: 80px 20px;
@@ -81,10 +91,10 @@
   .hero-text {
     font-size: 16px;
   }
-}
+} */
 
 /* Adjust layout for smaller tablets (max-width: 768px) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero {
     height: auto;
     padding: 60px 20px;
@@ -108,10 +118,10 @@
     font-size: 14px;
     padding: 0 15px;
   }
-}
+} */
 
 /* Adjust layout for mobile screens (max-width: 480px) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .hero {
     height: auto;
     padding: 50px 15px;
@@ -135,4 +145,35 @@
   .hero-text {
     font-size: 14px;
   }
+} */
+
+/* RESPONSIVENESS */
+
+
+
+@media screen and (max-width: 1950px) and (min-width: 1600px){
+    .hero{
+      width: 100%;
+      height: 100%;
+    }
+    .nexa-chain-ai-container{
+      width: 100%;
+    }
+} 
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+
 }
+@media screen and (max-width: 1199px) and (min-width: 800px){
+
+}
+@media screen and (max-width: 799px) and (min-width: 300px){
+  .hero{
+    margin-left: 4px;
+  }
+  .hero-text{
+    width: 400px;
+    font-size: 13px;
+  }
+
+} 
+
