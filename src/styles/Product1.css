@@ -35,6 +35,10 @@
   .highlight-text{
     color: #226DB4;
   }
+  .find-section{
+    display: flex;
+    margin-left: 218px;
+  }
   .find-section-1 {
    margin-left: 300px;
    

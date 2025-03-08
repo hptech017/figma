@@ -31,6 +31,19 @@ const Products = () => {
         </a>
          </div>
           </h2>
+          <div className="find-section">
+        <h1 className="find-it-works">
+          Find <span className="highlight-text">it</span> works
+        </h1>
+              <div className="find-section-1">
+              <p className="section-content">
+          Manage your experience from start to finish, from integrations to
+          registration and from interactive stage elements to post-event data,
+          it’s all here.
+        </p>
+        <button className="learn-more-btn">Learn more</button>
+      </div>
+          </div>
       
           <div className="product-list">
           <ProductCard
