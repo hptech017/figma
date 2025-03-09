@@ -38,9 +38,12 @@
   .find-section{
     display: flex;
     margin-left: 218px;
+   
   }
   .find-section-1 {
    margin-left: 300px;
+   margin-top:36px ;
+   max-width: 330px;
    
     
   }
@@ -189,16 +192,50 @@
   
   
   /* Responsive Styles */
-  @media screen and (max-width: 900px) {
-    .product-card {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .product-image {
-      width: 100%;
-      height: 200px;
-      margin-top: 20px;
-    }
+
+
+  @media screen and (max-width: 1950px) and (min-width: 1600px){
+   
+
   }
+ @media screen and (max-width: 1599px) and (min-width: 1200px){
+   .find-section{
+    position: relative;
+    left: -11%;
+   }
+
+}
+ @media screen and (max-width: 1199px) and (min-width: 800px){
   
+   .title-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    
+   }
+   .ur-product{
+    font-size: 40px;
+    position: relative;
+    margin-left: 6px;
+    
+   }
+
+    .find-section{
+        position: relative;
+        left: -11%;
+        
+       }
+       .find-it-works {
+        font-size: 60px;
+        margin-top: 10px;
+        max-width: 0px;
+       }
+     
+    
+  
+}
+ @media screen and (max-width: 799px) and (min-width: 300px){
+
+   
+} 
+

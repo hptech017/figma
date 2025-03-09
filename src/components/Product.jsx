@@ -11,11 +11,11 @@ const Products = () => {
     
     const productName2 = "Invest";
     const productDescription2 = " Cut through the yawns, grab your audience’s attention, and turn passive attendees into active participants.";
-    const color2 = "red"
+    const color2 = "#089949"
     
     const productName3 = "Crypto";
     const productDescription3 = " Track the success of your events with deep insights and analytics measured across the entire attendee experience.";
-    const color3 = "red"
+    const color3 = "#226DB4"
     
 
 
@@ -49,17 +49,17 @@ const Products = () => {
           <ProductCard
         product={productName1}
         productDescription={productDescription1}
-        color={color1}
+        productColor={color1}
       />
       <ProductCard
         product={productName2}
         productDescription={productDescription2}
-        color={color2}
+        productColor={color2}
       />
       <ProductCard
         product={productName3}
         productDescription={productDescription3}
-        color={color3}
+        productColor={color3}
       />
     
     </div>

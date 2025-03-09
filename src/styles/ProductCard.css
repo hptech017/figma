@@ -78,3 +78,26 @@
 .image-container.expanded .product-image {
     transform: scale(1.1);
 }
+
+
+@media screen and (max-width: 1950px) and (min-width: 1600px){
+   
+
+}
+@media screen and (max-width: 1599px) and (min-width: 1200px){
+.product-container{
+    position: relative;
+    left: -11%;
+}
+.image-container{
+    width: 500px;
+}
+
+}
+@media screen and (max-width: 1199px) and (min-width: 800px){
+
+}
+@media screen and (max-width: 799px) and (min-width: 300px){
+
+ 
+} 
