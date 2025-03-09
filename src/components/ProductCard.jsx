@@ -15,7 +15,7 @@ const ProductCard = ({ product, productDescription, productColor }) => {
                 <h2 className="productName">
                     {product}
                     <span className="arrow">
-                        <img src={arrowImg} alt="arrow-icon" width="80" />
+                        <img className='arrowImg' src={arrowImg} alt="arrow-icon" width="80" />
                     </span>
                 </h2>
 

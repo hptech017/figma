@@ -195,7 +195,12 @@
 
 
   @media screen and (max-width: 1950px) and (min-width: 1600px){
-   
+    .find-section{
+        position: relative;
+        left: -10%;
+       }
+       
+    
 
   }
  @media screen and (max-width: 1599px) and (min-width: 1200px){
@@ -222,7 +227,7 @@
 
     .find-section{
         position: relative;
-        left: -11%;
+        left: -16%;
         
        }
        .find-it-works {
@@ -235,7 +240,45 @@
   
 }
  @media screen and (max-width: 799px) and (min-width: 300px){
-
    
+
+    .title-img{
+        width: 80px;
+        height: 80px;
+        margin-top: 37px;
+        
+       }
+       .ur-product{
+        font-size: 30px;
+        position: relative;
+        margin-left: 11px;
+        
+       }
+    
+        .find-section{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: -55%;
+            
+           }
+           .find-it-works {
+            display: flex;
+            /* flex-direction: row; */
+            font-size: 35px;
+            margin-top: 10px;
+            gap: 10px;
+           }
+          .section-content{
+            width: 400px;
+          }
+          .find-section-1{
+            position: relative;
+            right: 130%;
+          }
+          .learn-more-btn{
+           margin-left: 130px;
+          }
+        
 } 
 

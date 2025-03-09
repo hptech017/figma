@@ -90,16 +90,16 @@
 } 
  @media screen and (max-width: 1599px) and (min-width: 1200px){
     .sidebar {
-        top: 120%;
+        top: 92%;
     }
 }
  @media screen and (max-width: 1199px) and (min-width: 800px){
     .sidebar {
-        top: 140%;
+        top: 91%;
     }
-    .sidebar-item{
-        width: 80%;
-    }
+    /* .sidebar-item{
+        
+    } */
     .sidebar-item img{
         width: 55px;
         height: 55px;
@@ -111,15 +111,24 @@
 }
  @media screen and (max-width: 799px) and (min-width: 300px){
     .sidebar {
-        top: 51%;
+        top: 57%;
         width: 40px;
         
         
     }
     .sidebar-item-content{
-        font-size: 14px;
-        padding-right: 10px;
+        font-size: 5px;
+        padding-right: 40%;
     }
-   
+    .sidebar-item{
+        height: 230px;
+    }
+    .sidebar-item .text{
+        font-size: 13px;
+    }
+    .sidebar-item img{
+        width: 35px;
+        height: 35px;
+    }
 } 
 
