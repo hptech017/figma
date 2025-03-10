@@ -29,7 +29,7 @@
     max-width: 232px;
     font-size: 80px;
     margin-top: auto;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     
   }
   .highlight-text{
@@ -37,13 +37,13 @@
   }
   .find-section{
     display: flex;
-    margin-left: 218px;
+    /* margin-left: 218px; */
    
   }
   .find-section-1 {
-   margin-left: 300px;
+   /* margin-left: 300px; */
    margin-top:36px ;
-   max-width: 330px;
+   max-width: auto;
    
     
   }
@@ -195,90 +195,126 @@
 
 
   @media screen and (max-width: 1950px) and (min-width: 1600px){
-    .find-section{
-        position: relative;
-        left: -10%;
-       }
+    .find-section {
+      display: flex;
+      justify-content: space-evenly; /* Centers content properly */
+      align-items: center;
+      width: 100%; /* Ensures it takes full width */
+      text-align: center;
+      margin: 0 auto; /* Centers it within the container */
+      padding: 20px;
+   
+  }
        
     
 
   }
- @media screen and (max-width: 1599px) and (min-width: 1200px){
-   .find-section{
-    position: relative;
-    left: -11%;
-   }
-
-}
- @media screen and (max-width: 1199px) and (min-width: 800px){
-  
-   .title-img{
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
-    
-   }
-   .ur-product{
-    font-size: 40px;
-    position: relative;
-    margin-left: 6px;
-    
-   }
-
-    .find-section{
-        position: relative;
-        left: -16%;
-        
-       }
-       .find-it-works {
-        font-size: 60px;
-        margin-top: 10px;
-        max-width: 0px;
-       }
+  @media screen and (max-width: 1599px) and (min-width: 1200px) {
+    .find-section {
+        display: flex;
+        justify-content: space-evenly; /* Centers content properly */
+        align-items: center;
+        width: 100%; /* Ensures it takes full width */
+        text-align: center;
+        margin: 0 auto; /* Centers it within the container */
+        padding: 20px;
      
-    
-  
+    }
 }
- @media screen and (max-width: 799px) and (min-width: 300px){
-   
 
-    .title-img{
-        width: 80px;
-        height: 80px;
-        margin-top: 37px;
-        
-       }
-       .ur-product{
-        font-size: 30px;
-        position: relative;
-        margin-left: 11px;
-        
-       }
-    
-        .find-section{
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: -55%;
-            
-           }
-           .find-it-works {
-            display: flex;
-            /* flex-direction: row; */
-            font-size: 35px;
-            margin-top: 10px;
-            gap: 10px;
-           }
-          .section-content{
-            width: 400px;
-          }
-          .find-section-1{
-            position: relative;
-            right: 130%;
-          }
-          .learn-more-btn{
-           margin-left: 130px;
-          }
-        
-} 
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+  
+  .title-img {
+      width: 100px;
+      height: 100px;
+      margin-top: 25px;
+  }
 
+  .ur-product {
+      font-size: 40px;
+      position: relative;
+      margin-left: 6px;
+  }
+
+  .find-section {
+      display: flex;
+      flex-direction: column; /* Stack items on smaller screens */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px; /* Add spacing */
+  }
+
+  .find-it-works {
+      font-size: 50px; /* Adjust size for better readability */
+      margin-top: 10px;
+      max-width: 100%; /* Allow full width for better text alignment */
+  }
+
+  .section-content {
+      max-width: 600px; /* Restrict width for better readability */
+      text-align: center;
+      margin: 0 auto; /* Center the content */
+  }
+
+  .find-section-1 {
+      max-width: 400px; /* Adjust width for responsiveness */
+      text-align: center;
+      margin: 20px auto; /* Add spacing and center */
+  }
+
+  .learn-more-btn {
+      margin: 20px auto; /* Center the button */
+      display: block;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 300px) {
+  .title-img {
+      width: 80px;
+      height: 80px;
+      margin-top: 10px;
+  }
+
+  .ur-product {
+      font-size: 30px;
+      margin-left: 5px;
+  }
+
+  .find-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: 0; /* Remove left shifting */
+  }
+
+  .find-it-works {
+      font-size: 35px;
+      margin-top: 10px;
+  }
+
+  .section-content {
+      width: 90%;
+      max-width: 400px;
+  }
+
+  .find-section-1 {
+      position: static; /* Remove right shifting */
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .learn-more-btn {
+      margin-left: 0; /* Center button */
+  }
+
+  .product-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .product-card {
+      width: 90%;
+  }
+}

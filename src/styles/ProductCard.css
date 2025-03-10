@@ -6,6 +6,8 @@
     border-radius: 10px;
     background: white;
     margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-evenly;
     
 }
 
@@ -14,11 +16,11 @@
 
 /* Product Text */
 .product-text {
-    flex: 1;
+    /* flex: 1; */
     padding: 20px;
     max-width: 300px;
-    position: absolute;
-    margin-left: 291px;
+    /* position: absolute; */
+    /* margin-left: 291px; */
 }
 
 .mlm-label {
@@ -59,7 +61,7 @@
     align-items: center;
     transition: height 1s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
-    margin-left: 698px;
+    /* margin-left: 30%; */
 }
 
 .image-container.expanded {
@@ -81,60 +83,135 @@
 
 
 @media screen and (max-width: 1950px) and (min-width: 1600px){
-    .product-container{
-        position: relative;
-        left: -11%;
-    }   
-    .image-container{
-        width: 800px;
-    }
+    .product-container {
+        .product-container {
+            display: flex;
+           ; /* Stacks elements vertically */
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            gap: 20px; /* Adds space between elements */
+           
+        }
+    
+        .image-container {
+            width: 100%;
+            max-width: 550px; /* Ensures it doesn't get too large */
+            display: flex;
+            justify-content: center;
+        }
 
 }
-@media screen and (max-width: 1599px) and (min-width: 1200px){
-.product-container{
-    position: relative;
-    left: -11%;
 }
-.image-container{
-    width: 650px;
+@media screen and (max-width: 1599px) and (min-width: 1200px) {
+    .product-container {
+        .product-container {
+            display: flex;
+             /* Stacks elements vertically */
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            gap: 20px; /* Adds space between elements */
+           
+        }
+    
+        .image-container {
+            width: 100%;
+            max-width: 550px; /* Ensures it doesn't get too large */
+            display: flex;
+            justify-content: center;
+        }
 }
-
 }
-@media screen and (max-width: 1199px) and (min-width: 800px){
-    .product-container{
-        position: relative;
-        left: -23%;
-    }
-    .image-container{
-        width: 550px;
-        /* border-radius: 200px; */
-       position: relative;
-       left: -10%;
-    }
-}
-@media screen and (max-width: 799px) and (min-width: 300px){
-
-    .product-container{
-        position: relative;
-        left: -73%;
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+    .product-container {
+        display: flex;
+         /* Stacks elements vertically */
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        gap: 20px; /* Adds space between elements */
        
     }
-    .image-container{
-        width: 250px;
-        /* max-height: 150px; */
-        border-radius: 100px;
-       position: relative;
-       left: -52%;
-       display: flex;
-       flex-direction: column;
 
+    .image-container {
+        width: 100%;
+        max-width: 550px; /* Ensures it doesn't get too large */
+        display: flex;
+        justify-content: center;
     }
-    .product-text h2{
-        font-size: 20px;
+
+    .find-section {
+        display: flex;
+        flex-direction: column; /* Stacks content properly */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
-    .arrowImg{
+
+    .find-it-works {
+        font-size: 40px; /* Adjusted for better scaling */
+        max-width: 90%; /* Prevents overflow */
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 799px) and (min-width: 300px) {
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align content */
+        text-align: center; /* Center text */
+        position: static;
+        left: 0; /* Reset positioning */
+    }
+
+    .product-text {
+        position: static; /* Remove absolute positioning */
+        max-width: 100%; /* Allow full width */
+        padding: 10px; /* Add spacing */
+        margin-left: 0;
+    }
+   
+
+    .product-text h2 {
+        font-size: 24px; /* Adjust heading size */
+        justify-content: center;
+    }
+    .image-container {
+        width: 80%;
+        max-width: 400px;
+        height: 150px; /* Initial collapsed height */
+        border-radius: 50px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .image-container.expanded {
+        height: 264px; /* Expanded height (same as other screen sizes) */
+        border-radius: 180px; /* Ensuring consistency */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .image-container.expanded .product-image {
+        transform: scale(1.1);
+    }
+    
+  
+
+    .arrowImg {
         height: 20px;
         width: 20px;
     }
-   
-} 
+}
