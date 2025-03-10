@@ -4,8 +4,8 @@
 .sidebar {
     position: absolute;
     left: 0;
-    top: 55%;
-    transform: translateY(-21%);
+    top: 55% !important;
+    transform: translateY(-21%) !important;
     /* display: flex; */
     /* flex-direction: column; */
     /* gap: 0; */
