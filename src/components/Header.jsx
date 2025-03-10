@@ -19,17 +19,13 @@ const Header = () => {
         <a href="#">About Us</a>
       </nav>
 
-      <button className="all-products">All Product ☰</button>
-
-      {/* Hamburger Menu */}
-      <div
-        className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
-        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      {/* All Products Button with Hamburger Inside */}
+      <button className="all-products" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+        All Products
+        <span className={`hamburger-icon ${isMobileMenuOpen ? "open" : ""}`}>
+          {isMobileMenuOpen ? "✖" : "☰"}
+        </span>
+      </button>
     </header>
   );
 };

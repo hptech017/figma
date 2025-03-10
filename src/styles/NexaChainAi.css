@@ -170,8 +170,11 @@
   .hero{
     margin-left: 4px;
   }
+  .hero_img{
+    margin-top: 15px;
+  }
   .hero-text{
-    width: 400px;
+    width: auto;
     font-size: 13px;
   }
 

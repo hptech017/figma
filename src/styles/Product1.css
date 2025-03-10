@@ -281,11 +281,33 @@
       width: 80px;
       height: 80px;
       margin-top: 10px;
+      margin-bottom: 20px;
   }
 
   .ur-product {
       font-size: 30px;
       margin-left: 5px;
+  }
+  .section-title-container{
+    /* display: flex; */
+    /* justify-content: space-evenly;
+    
+    width: auto; */
+    justify-content: center;
+    align-items: center;
+  }
+  .section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+  }
+  .discover-link{
+    display: flex;
+    width:auto ;
+    margin-right: 25px;
   }
 
   .find-section {

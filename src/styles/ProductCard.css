@@ -198,7 +198,7 @@
     
     .image-container.expanded {
         height: 264px; /* Expanded height (same as other screen sizes) */
-        border-radius: 180px; /* Ensuring consistency */
+        border-radius: 60px; /* Ensuring consistency */
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     }
     
