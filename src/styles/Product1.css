@@ -1,4 +1,8 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
 .products-container {
     /* width: 100%; */
     max-width: 85%;
@@ -26,6 +30,7 @@
    margin-bottom: -30px;
   }
   .find-it-works {
+    font-family: Inter;
     max-width: 232px;
     font-size: 80px;
     margin-top: auto;
@@ -42,6 +47,8 @@
   }
   .find-section-1 {
    /* margin-left: 300px; */
+   font-family: Inter;
+   font-weight: 400;
    margin-top:36px ;
    max-width: auto;
    
@@ -84,7 +91,7 @@
   } */
   .discover-link {
     font-family: "Poppins";
-    font-size: 16px;
+    font-size: 14px;
     color: #2FA966;
     text-decoration: none;
     margin-left: -6px;
