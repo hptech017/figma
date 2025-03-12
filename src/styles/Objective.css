@@ -1,0 +1,250 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+/* ✅ Main Container */
+.objective-container {
+    text-align: center;
+    padding: 5vh 5vw;
+}
+
+/* ✅ Title Styling */
+.objective-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 4vh;
+}
+
+/* ✅ 3D Text Effect */
+.highlight {
+    font-size: clamp(2rem, 4vw, 3rem); /* Responsive font size */
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #999999; /* Base color */
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: colorChange 1s infinite alternate ease-in-out;
+    padding-right:4px ;
+    
+    /* ✅ 3D Effect Using Multiple Shadows */
+    text-shadow: 
+        2px 2px 0px #4a0073, 
+        4px 4px 0px #2c004d, 
+        6px 6px 0px #10001a; 
+
+    transition: all 0.3s ease-in-out;
+}
+@keyframes colorChange {
+    0% { color: #ff6b6b; }   /* Soft Red */
+    20% { color: #feca57; }  /* Bright Yellow */
+    40% { color: #1dd1a1; }  /* Aqua Green */
+    60% { color: #54a0ff; }  /* Cool Blue */
+    80% { color: #ff9ff3; }  /* Soft Pink */
+    100% { color: #ff6b6b; } /* Back to Soft Red */
+}
+
+/* ✅ Hover Effect: Moves the text slightly */
+.highlight:hover {
+    transform: translateY(-5px) rotateX(10deg);
+    text-shadow: 
+        3px 3px 0px #000000, 
+        6px 6px 0px #ffffff, 
+        9px 9px 0px #7326a3;
+}
+
+/* ✅ 2x2 Grid for Large Screens */
+.objective-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 2vw;
+    margin-top: 4vh;
+}
+
+/* ✅ Individual Cards */
+.objective-card {
+    border-radius: 2vw;
+    padding: 4vw;
+    color: white;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 30vh;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✅ Background Images */
+.blockchain {
+    background: url("../assets/blockchain-image.png") center/cover no-repeat;
+}
+
+.ai {
+    background: url("../assets/ai-image.png") center/cover no-repeat;
+}
+
+.vr {
+    background: url("../assets/vr-image.png") center/cover no-repeat;
+}
+
+.finance {
+    background: url("../assets/finance-image.png") center/cover no-repeat;
+}
+
+/* ✅ Dark Overlay */
+.objective-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Card Hover Effects */
+.objective-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.objective-card:hover::before {
+    background: rgba(0, 0, 0, 0.1); /* Lighter overlay */
+}
+
+.objective-card:hover .card-content h3 {
+    color: #ffcc00; /* Change heading color */
+}
+
+.objective-card:hover .card-content p {
+    color: #ffffff; /* Brighten text */
+}
+
+/* ✅ Text Content Inside the Card */
+.card-content {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+}
+
+/* ✅ Card Headings */
+.card-content h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ✅ Description Text */
+.card-content p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    margin: 1vh 0;
+}
+
+/* ✅ Button Container */
+.buttons {
+    display: flex;
+    align-items: center;
+    font-family: 'Manrope';
+    font-weight: 500;
+    gap: 1vw;
+    margin-top: 1.5vh;
+}
+
+/* ✅ Button Styles */
+.btn {
+    padding: 1.2vh 2vw;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons span {
+    font-size: 0.8rem;
+}
+
+/* ✅ "Get Started" Button */
+.get-started {
+    background: black;
+    color: white;
+}
+
+.get-started:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* ✅ "Demo" Button */
+.demo {
+    background: transparent;
+    color: white;
+    border: 0.1vw solid white;
+}
+
+.demo:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   ✅ RESPONSIVE DESIGN
+   ========================================= */
+
+/* ✅ Tablet & Smaller Screens */
+@media (max-width: 1024px) {
+    .objective-cards {
+        grid-template-columns: 1fr; /* Stack the cards in one column */
+    }
+    
+    .objective-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+    }
+
+    .card-content {
+        position: absolute;
+        text-align: start;
+        left: 10%;
+        top: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .objective-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .card-content h3 {
+        font-size: clamp(1.2rem, 3vw, 2rem);
+    }
+
+    .card-content p {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: 1vh 1.5vw;
+        font-size: clamp(0.5em, 1vw, 0.8rem);
+    }
+
+    .buttons span {
+        font-size: clamp(0.7em, 1vw, 0.8rem);
+    }
+}
