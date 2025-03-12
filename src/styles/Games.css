@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+
+.games-container {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5vw; /* Adds space between video and image sections */
+  overflow: hidden;
+}
+
+/* ✅ Wrapper for Video Masked Text */
+.video-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* ✅ Video Masked Text */
+.title {
+  position: relative;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  color: white; /* Fallback */
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 🎥 Background Video */
+.text-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+  font-family: Arial, Helvetica, sans-serif;
+  object-fit: cover;
+}
+
+/* ✅ Wrapper for Image Masked Text */
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-30%); 
+}
+
+/* ✅ GAMIC IMAGE MASK */
+.text-overlay {
+  font-size: 30vw;
+  /* padding: 0 20px; */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../assets/gamic2.jpg") no-repeat center center/cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  top: 20%;
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+
+/* ✅ Large Desktop: 1950px to 1600px */
+@media screen and (max-width: 1950px) and (min-width: 1600px) {
+  /* Keep defaults or make slight tweaks if needed */
+ 
+}
+
+/* ✅ Desktop: 1599px to 1200px */
+@media screen and (max-width: 1599px) and (min-width: 1200px) {
+  .title {
+    font-size: 4.5rem;
+  }
+  .text-overlay {
+    /* font-size: 22rem; */
+  }
+}
+
+/* ✅ Tablet Landscape: 1199px to 800px */
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+    .games-container{
+        
+    }
+  .title {
+    font-size: 3rem;
+  }
+  .text-overlay {
+    /* font-size: 15rem; */
+  }
+}
+
+/* ✅ Tablet Portrait / Mobile: 799px to 300px */
+@media screen and (max-width: 799px) and (min-width: 300px) {
+  .title {
+    font-size: 2rem;
+  }
+  .text-overlay {
+    /* font-size: 10rem; */
+  }
+  .image-wrapper{
+    width: auto;
+  }
+}

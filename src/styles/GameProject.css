@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ Game Section (Full-Screen Background) */
+.game-section {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;  /* Ensures content never exceeds the viewport width */
+  /* margin: 0 auto;      */
+}
+
+/* ✅ Center and Align Content */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+  /* max-width: 800px; */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ✅ Top Text */
+.top-text {
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 600px;
+}
+
+/* ✅ Main Title */
+.main-title {
+  font-size: 4rem;
+  font-family: 'Anton', sans-serif;
+  color: #ff7a00;
+  text-transform: uppercase;
+}
+
+/* ✅ Button */
+.btn {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e66a00;
+}
+
+/* ✅ Video (Move Below Button & Resize) */
+.gameVideo {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ✅ Position Marquee Below Video */
+.marquee-container {
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  padding: 10px 0;
+  position: relative; /* Stays within .project-container */
+  margin-top: 20px;   /* Spacing below the video */
+  position: relative;
+  bottom: 0;
+}
+
+/* ✅ Marquee Animation */
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  font-size: 4rem; 
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ff7a00;
+  text-transform: uppercase;
+  animation: scrollText 5s linear infinite;
+}
+
+/* ✅ Keyframes for Infinite Scrolling */
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+
+/* ✅ Large Desktop: 1950px to 1600px */
+@media screen and (max-width: 1950px) and (min-width: 1600px) {
+  /* Keep defaults or make slight tweaks if needed */
+  .game-section{
+    width: 100%;
+  }
+}
+
+/* ✅ Desktop: 1599px to 1200px */
+@media screen and (max-width: 1599px) and (min-width: 1200px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+  .marquee {
+    font-size: 3.5rem;
+  }
+}
+
+/* ✅ Tablet Landscape: 1199px to 800px */
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+  .main-title {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .marquee {
+    font-size: 3rem;
+  }
+}
+
+/* ✅ Tablet Portrait / Mobile: 799px to 300px */
+@media screen and (max-width: 799px) and (min-width: 300px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .marquee {
+    font-size: 2.5rem;
+  }
+  .top-text {
+    font-size: 12px;
+  }
+}
