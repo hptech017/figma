@@ -1,0 +1,84 @@
+/* Main container */
+.operating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vw; /* Responsive padding */
+  max-width: 90vw; /* Flexible max-width */
+  margin: auto;
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+/* Left Section */
+.left-section {
+  width: 45%; /* Flexible width */
+  min-width: 300px; /* Prevents collapsing */
+}
+
+.logo {
+  width: 35vw; /* Scales with viewport width */
+ /* Prevents excessive growth */
+  margin-bottom: 2vh;
+}
+
+.main-title {
+  font-size: 2rem; /* Scales with root font size */
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2vh;
+}
+
+/* Get Started Button */
+.get-started-btn {
+  background: black;
+  color: white;
+  padding: 0.8em 1.5em; /* Scales with font size */
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4em;
+  transition: 0.3s;
+}
+
+.get-started-btn:hover {
+  background: #333;
+}
+
+/* Right Section */
+.right-section {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-image {
+  max-width: 90%; /* Ensures responsiveness */
+  height: auto;
+  border-radius: 1em;
+  box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.1); /* Flexible shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .operating-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .logo {
+    width: 80vw;
+  }
+}

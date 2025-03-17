@@ -6,6 +6,7 @@ import Product from "./components/Product";
 import Games from "./components/Games";
 import GameProject from "./components/GameProject";
 import Objective from "./components/Objective";
+import Operating from "./components/Operating";
 
 
 
@@ -18,7 +19,8 @@ function App() {
       <Product />
       <Games />
       <GameProject />
-      <Objective/>
+      <Objective />
+      <Operating/>
       
   
     </>
