@@ -1,0 +1,176 @@
+.support-container {
+    width: 90vw;
+    background: #f8f8f8;
+    padding-bottom: 2rem;
+    border-radius: 3em;
+    margin: auto;
+}
+
+/* 🌟 Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    max-width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: clamp(0.5rem, 1.5vw, 0.8rem) clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.secondary-btn {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* 🏆 Hero Info */
+.hero-info {
+    text-align: right;
+    max-width: 30%;
+}
+
+.hero-info h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+}
+
+.hero-info span {
+    color: gray;
+}
+
+.team-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.team-section img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    border: 2px solid white;
+}
+
+.team-section p {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    color: black;
+}
+
+/* ▶ Play Button */
+.play-button {
+    width: clamp(2rem, 3vw, 3rem);
+    height: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    background: black;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* 🌊 Hero Image */
+.hero-image {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: 70rem;
+    border-radius: 0.6rem;
+}
+
+/* 🔄 Scrolling Support Banner */
+.support-banner {
+    overflow: hidden;
+    background: black;
+    color: white;
+    padding: 0.7rem 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.banner-content {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    animation: scroll 15s linear infinite;
+}
+
+/* 🏃‍♂️ Infinite Scrolling Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-info {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .team-section {
+        justify-content: center;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
