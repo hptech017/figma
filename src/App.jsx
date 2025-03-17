@@ -13,6 +13,7 @@ import Support from "./components/Support";
 import Performance from "./components/Performance";
 import Pricing from "./components/Pricing";
 import Questions from "./components/Questions";
+import Footer from "./components/Footer";
 
 
 
@@ -32,7 +33,8 @@ function App() {
       <Support />
       <Performance />
       <Pricing/>
-      <Questions/>
+      <Questions />
+      <Footer/>
   
     </>
    
