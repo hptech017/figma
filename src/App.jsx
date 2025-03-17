@@ -10,6 +10,8 @@ import Operating from "./components/Operating";
 import Testimonial from "./components/Testimonials";
 import Buisness from "./components/Buisness";
 import Support from "./components/Support";
+import Performance from "./components/Performance";
+import Pricing from "./components/Pricing";
 
 
 
@@ -27,6 +29,8 @@ function App() {
       <Testimonial />
       <Buisness />
       <Support />
+      <Performance />
+      <Pricing/>
       
   
     </>
