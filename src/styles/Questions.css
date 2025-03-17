@@ -1,0 +1,99 @@
+/* 🏆 Questions Section */
+.parent-question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.questions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+/* 📝 Left Side (Text + Image) */
+.questions-left {
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
+}
+
+.questions-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.questions-subtext {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.faq-image {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* ❓ FAQ List */
+.questions-right {
+    flex: 1;
+    max-width: 50%;
+    min-width: 350px;
+}
+
+.faq-item {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-item:hover {
+    background: #f0f0f0;
+}
+
+.faq-item p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    margin: 0;
+}
+
+.faq-arrow {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-arrow svg {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+    .questions-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .questions-left,
+    .questions-right {
+        max-width: 100%;
+    }
+}
