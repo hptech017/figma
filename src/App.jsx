@@ -7,6 +7,7 @@ import Games from "./components/Games";
 import GameProject from "./components/GameProject";
 import Objective from "./components/Objective";
 import Operating from "./components/Operating";
+import Testimonial from "./components/Testimonials";
 
 
 
@@ -20,7 +21,8 @@ function App() {
       <Games />
       <GameProject />
       <Objective />
-      <Operating/>
+      <Operating />
+      <Testimonial/>
       
   
     </>
