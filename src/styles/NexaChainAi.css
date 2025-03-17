@@ -62,6 +62,7 @@
   font-family: Heebo, sans-serif;
   margin-top: 20px;
   font-size: 15px;
+  width: 70vw;
   max-width: 800px;
   line-height: 1.6;
   color: black;
@@ -174,7 +175,7 @@
     margin-top: 15px;
   }
   .hero-text{
-    width: auto;
+    /* width: 70vw; */
     font-size: 13px;
   }
 
