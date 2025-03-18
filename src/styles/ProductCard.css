@@ -8,46 +8,33 @@
     margin-bottom: 20px; 
     display: flex;
     justify-content: space-evenly;
-    
 }
-
-/* Highlighted Text */
-
 
 /* Product Text */
 .product-text {
-    /* flex: 1; */
     padding: 20px;
     max-width: 300px;
-    /* position: absolute; */
-    /* margin-left: 291px; */
 }
 
 .mlm-label {
     font-size: 18px;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: bold;
     color: orange;
 }
 
 .product-text h2 {
-    font-family: Inter;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
     font-size: 59px;
     margin: 10px 0;
-    font-weight: bold;
 }
 
 .product-text p {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #555;
-}
-
-.products-content {
-    font-size: 15px;
-    position: relative;
 }
 
 /* Product Name Section */
@@ -55,100 +42,97 @@
     display: flex;
 }
 
-/* Image Container */
+/* Image Container - Initially Collapsed (Shows Only the Top Part) */
 .image-container {
-    width: 900px;
-    height: 800px;
-    overflow: hidden;
-    border-radius: 180px;
+    width: 50em;
+    height: 20em; /* Controls the visible area */
+    overflow-y: scroll; /* Allows scrolling inside */
+    border-radius: 12em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Ensures the top part is shown */
     transition: height 1s ease-in-out, box-shadow 0.5s ease-in-out;
     cursor: pointer;
-    /* margin-left: 30%; */
+    background-color: #f8f8f8;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+    /* border: 2px solid rgba(128, 128, 128, 0.158); */
 }
 
+/* Hide Scrollbar for WebKit Browsers (Chrome, Safari) */
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Expanded State - Shows More of the Image */
 .image-container.expanded {
-    height: 264px;
+    height: 40em; /* Expands to reveal more */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Image */
+/* Product Image - Ensures Top Part is Visible in Collapsed State */
 .product-image {
     width: 100%;
-    height: auto;
-    border-radius: 50px;
-    transition: transform 1s ease-in-out;
-}
-
-.image-container.expanded .product-image {
-    transform: scale(1.1);
+    min-height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: top; /* Keeps the top part of the image visible */
 }
 
 
-@media screen and (max-width: 1950px) and (min-width: 1600px){
-    .product-container {
-        .product-container {
-            display: flex;
-           ; /* Stacks elements vertically */
-            justify-content: center;
-            width: 100%;
-            padding: 20px;
-            gap: 20px; /* Adds space between elements */
-           
-        }
-    
-        .image-container {
-            width: 100%;
-            max-width: 550px; /* Ensures it doesn't get too large */
-            display: flex;
-            justify-content: center;
-        }
-
-}
-}
-@media screen and (max-width: 1599px) and (min-width: 1200px) {
-    .product-container {
-        .product-container {
-            display: flex;
-             /* Stacks elements vertically */
-            justify-content: center;
-            width: 100%;
-            padding: 20px;
-            gap: 20px; /* Adds space between elements */
-           
-        }
-    
-        .image-container {
-            width: 100%;
-            max-width: 550px; /* Ensures it doesn't get too large */
-            display: flex;
-            justify-content: center;
-        }
-}
-}
-@media screen and (max-width: 1199px) and (min-width: 800px) {
+/* Responsive Styles */
+@media screen and (max-width: 1950px) and (min-width: 1600px) {
     .product-container {
         display: flex;
-         /* Stacks elements vertically */
         justify-content: center;
         width: 100%;
         padding: 20px;
-        gap: 20px; /* Adds space between elements */
-       
+        gap: 20px;
     }
 
     .image-container {
         width: 100%;
-        max-width: 550px; /* Ensures it doesn't get too large */
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1200px) {
+    .product-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+    .product-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 550px;
         display: flex;
         justify-content: center;
     }
 
     .find-section {
         display: flex;
-        flex-direction: column; /* Stacks content properly */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -156,64 +140,61 @@
     }
 
     .find-it-works {
-        font-size: 40px; /* Adjusted for better scaling */
-        max-width: 90%; /* Prevents overflow */
+        font-size: 40px;
+        max-width: 90%;
         margin: 10px 0;
     }
 }
+
 @media screen and (max-width: 799px) and (min-width: 300px) {
     .product-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center align content */
-        text-align: center; /* Center text */
+        align-items: center;
+        text-align: center;
         position: static;
-        left: 0; /* Reset positioning */
     }
 
     .product-text {
-        position: static; /* Remove absolute positioning */
-        max-width: 100%; /* Allow full width */
-        padding: 10px; /* Add spacing */
+        position: static;
+        max-width: 100%;
+        padding: 10px;
         margin-left: 0;
     }
-   
 
     .product-text h2 {
-        font-size: 24px; /* Adjust heading size */
-        justify-content: center;
+        font-size: 24px;
     }
+
     .image-container {
         width: 80%;
         max-width: 400px;
-        height: 150px; /* Initial collapsed height */
+        height: 150px;
         border-radius: 50px;
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: height 0.5s ease-in-out, border-radius 0.5s ease-in-out;
         cursor: pointer;
     }
-    
+
     .image-container.expanded {
-        height: 264px; /* Expanded height (same as other screen sizes) */
-        border-radius: 60px; /* Ensuring consistency */
+        height: 264px;
+        border-radius: 60px;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     }
-    
+
     .product-image {
         width: 100%;
         height: auto;
         border-radius: 50px;
         transition: transform 1s ease-in-out;
     }
-    
+
     .image-container.expanded .product-image {
         transform: scale(1.1);
     }
-    
-  
 
     .arrowImg {
         height: 20px;

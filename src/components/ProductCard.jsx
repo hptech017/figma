@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/ProductCard.css';
 import arrowImg from '../assets/arrow.png';
-import productImg from '../assets/product.png';
 
-const ProductCard = ({ product, productDescription, productColor }) => {
-    const [isExpanded, setIsExpanded] = useState(true);
+
+const ProductCard = ({ product, productDescription, productColor, productImage}) => {
+    const [isExpanded, setIsExpanded] = useState(false);
     console.log(isExpanded)
 
     return (
@@ -28,7 +28,7 @@ const ProductCard = ({ product, productDescription, productColor }) => {
                 className={`image-container ${isExpanded ? "expanded" : ""}`}
                 onClick={() => setIsExpanded(!isExpanded)}
             >
-                <img className="product-image" src={productImg} alt="product-image" />
+                <img className="product-image" src={productImage} alt="product-image" />
             </div>
         </div>
     );
